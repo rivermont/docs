@@ -1,3 +1,7 @@
+## This file is being used for reference purposes only
+
+### For the actuall tutorial, see /arch/guide.md
+
 # Installing Arch Linux
 Originally forked from [hnykda/tutos](https://github.com/hnykda/tutos).
 
