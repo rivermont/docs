@@ -19,6 +19,23 @@ your system for functionality and visibility.
 
 ## Booting from the Install Medium
 
+### Network Connectivity
+First thing to do after booting the live iso is to check that you have internet.
+This can be done with a simple `ping 8.8.8.8`. 8.8.8.8 is a Google DNS server,
+so it should always be online and shouldn't be blocked by any routers or firewalls.
+
+### System Time
+Next, update the system clock.
+Programs such as `ntp` can be used later, but on the live image run `timedatectl set-ntp true`
+to make sure the system clock is accurate.
+
+## Partitioning the Disk
+
+> Note: For GRUB to boot from a GPT-partitioned disk on a BIOS-based system, a BIOS boot partition is required.
+
+Note
+I got warnings during the pacstrap about possible missing firmware for `aic94xx` and wd719xx`.
+
 # Useful Links
 
 * Official guide on Arch wiki
